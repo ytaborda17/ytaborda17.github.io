@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>YTaborda - CV</title>
+
+    <link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        :root { --main-color: #57007f }
+        * { color: #3c4858 }
+        p { text-align: justify }
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-weight: 700;
+            font-size: 0.98em;
+        }
+        .text-purple {  color: var(--main-color) }
+
+        header { display: grid; grid-template-columns: auto 1fr 1fr; column-gap: 10px }
+        header :nth-child(4) { grid-column: 1/4 }
+
+        main { display: grid; grid-template-columns: 70% auto; align-items: baseline; column-gap: 20px }
+        main .exp article { display: grid; grid-template-columns: 60% 1fr; column-gap: 10px }
+        main .exp article > :nth-child(1) { grid-column: 1/3; text-align: center }
+        main .exp article dl { font-size: 0.8em }
+        main .exp article dl dd { margin-left: 0px; margin-bottom: 0px; word-wrap: break-word }
+        main .exp article dl dd i { opacity: 0.6; color: var(--main-color) }
+
+        @media only print {
+            @page { size: landscape; margin: 15mm 10mm 15mm 10mm }
+            article, 
+            .skills p { font-size: 8.5pt }
+            main .exp article dl { font-size: 1em }
+            .pbreak { page-break-before: always }
+            .noprint { visibility: hidden; height: 1px !important }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="../img/yt.svg" alt="YT" height="56px" class="mt-1">
+            <div>
+                <h1 class="m-0 p-0">Yeniree Taborda</h1>
+                <div>Desarrollador Web Full Stack</div>
+            </div>
+            <div class="text-right">
+                <i class="text-purple fas fa-mobile-alt"></i> (+57) 350 751 0979<br>
+                <i class="text-purple far fa-envelope"></i> <a href="mailto:ytaborda17@gmail.com?subject=Acabo de ver tu CV online">ytaborda17@gmail.com</a><br>
+                <i class="text-purple fab fa-skype"></i> <i class="text-purple fab fa-github"></i> ytaborda17<br>
+            </div>
+            <small class="text-muted text-justify">
+                Soy una persona responsable, aprendo muy rápido, me gusta trabajar en equipo y lo que busco en un empleo es que ofrezca buen ambiente de trabajo y la oportunidad de aprender constantemente. 
+            </small>
+        </header>
+
+        <main class="mt-4">
+            <!-- EXPERIENCIA -->
+            <section class="exp">
+                
+
+                <!-- <article>
+                    <h5>Fullstack Developer</h5>
+                    <p>
+                        NodeJs, Angular.
+                    </p>
+                    <dl>
+                        <dd><i class="fas fa-calendar"></i> Ago/2021 – Actualmente</dd>
+                        <dd><i class="fas fa-building"></i> <a href="https://onetree.com/" target="_blank">Onetree</a></dd>
+                    </dl>
+                </article> -->
+
+
+                <article>
+                    <h5>Programador Web</h5>
+                    <p>
+                        Desarrollo y mantenimiento de aplicaciones Web con Node.Js y Express framework, Angular con libreria Devexpress, .NET, socket.io, 
+                        HTML, CSS (Bootstrap), JS, jQuery, MySQL, Firebase Realtime Database. <br>
+                        <small>
+                            Desarrollos: <a href="https://cotizadores.e-broker.com.co/" target="_blank">Cotizadores E-Broker</a>,  
+                            <a href="https://cotizador.redes.co/" target="_blank">Cotizador En Red</a>, 
+                            <a href="https://mesti.co/" target="_blank">Mesti - Poliza Mensual</a>
+                        </small>
+                    </p>
+                    <dl>
+                        <dd><i class="fas fa-calendar"></i> Sep/2019 – Ago/2021</dd>
+                        <dd><i class="fas fa-building"></i> CRP Servicios y Consultoria SAS</dd>
+                        <dd><i class="fas fa-user"></i> Ing. Leonardo Sapuy</dd>
+                        <dd><i class="fas fa-envelope"></i> leonardo.sapuy<br>@cprserviciosyconsultoria.com.co</dd>
+                        <dd><i class="fas fa-phone"></i> +57 1 7444120</dd>
+                    </dl>
+                </article>
+
+
+
+                <article class="noprint">
+                    <h5>Freelancer</h5>
+                    <p>
+                        Desarrollo de aplicaciones en ambiente web (Front y Back End) en .NET, C# y libreria Devexpress.
+                    </p>
+                    <dl>
+                        <dd><i class="fas fa-calendar"></i> Mar/2019 – Sep/2019 </dd>
+                    </dl>
+                </article>
+    
+
+
+    
+                <article>
+                    <h5>Coord. Desarrollo de Software</h5>
+                    <p>
+                        Para desarrollo y gestión de aplicaciones: PHP, SQL Server, JavaScript, jQuery, HTML, CSS, Yii Framework para desarrollo
+                        con architectura MVC, Bootstrap como librería de estilos, mantenimiento de antiguas aplicaciones en Java, Visual
+                        FoxPro y Visual Basic.
+                        Como responsabilidades generales: garantizar la disponibilidad de la infraestructura tecnológica a los usuarios
+                        de la empresa y desarrollo o mantenimiento de aplicaciones para la mejora de procesos. <br>
+                        En cuanto a Gestión TIC: administrador de Firewall Cyberoam, Active Directory, Rackspace, CrashPlan, Claro Cloud, Veem Backup, monitoreo
+                        constante de la red con Nagios y manejo de los reportes de gestion TIC en SQLite desde Spiceworks Help Desk. <br>
+                    </p>
+                    <dl>
+                        <dd><i class="fas fa-calendar"></i> Abr/2016 – Ene/2019 </dd>
+                        <dd><i class="fas fa-building"></i> <a target="_blank" href="https://duquesa.com.co/">Duquesa S.A.</a> </dd>
+                        <dd><i class="fas fa-user"></i> Ing. Jairo Caro, Jefe de Sistemas </dd>
+                        <dd><i class="fas fa-envelope"></i> sistemas@duquesa.com.co </dd>
+                        <dd><i class="fas fa-phone"></i> +57 1 7957930 Ext. 105 </dd>
+                    </dl>
+                </article>
+    
+                
+                <article class="noprint">
+                    <h5>Freelancer</h5>
+                    <p>
+                        Desarrollo de aplicaciones en ambiente web (Front y Back End) en PHP, Bootstrap, administración de correos y servidores Web.
+                    </p>
+                    <dl>
+                        <dd><i class="fas fa-calendar"></i> Jun/2015 – Nov/2016 </dd>
+                    </dl>
+                </article>
+    
+                
+                <article> 
+                    <h5>Programador Web</h5>
+                    <p>
+                        Maquetado de Sitios Web SEO con diseño responsivo garantizando compatibilidad entre múltiples navegadores, 
+                        incluyendo IE7+, con el uso de HTML, CSS, JavaScript, jQuery. 
+                    </p>
+                    <dl>
+                        <dd><i class="fas fa-calendar"></i> Mar/2015 – Jun/2015 </dd>
+                        <dd><i class="fas fa-building"></i> <a href="https://www.webfindyou.com/" target="_blank">Web Find You</a></dd>
+                        <dd><i class="fas fa-user"></i> Ing. Oscar Salazar, Gerente de Programación </dd>
+                        <dd><i class="fas fa-envelope"></i> osalazar@webfindyou.com </dd>
+                        <dd><i class="fas fa-phone"></i> +58 261-9353958, +58 261-4153752 </dd>
+                    </dl>
+                </article>                
+    
+                
+                <article>
+                    <h5>Programador Jr.</h5>
+                    <p>
+                        Desarrollo de aplicaciones Web, basadas en HTML, CSS, PHP, MySQL, JavaScript, jQuery, XML, CURL. 
+                    </p>
+                    <dl>
+                        <dd><i class="fas fa-calendar"></i> Jul/2013 – May/2014  </dd>
+                        <dd><i class="fas fa-building"></i> Avacom Innovación 360 </dd>
+                        <dd><i class="fas fa-user"></i> Ing. Leonardo Castro </dd>
+                        <dd><i class="fas fa-envelope"></i> lcastro@avacom.com.ve </dd>
+                        <dd><i class="fas fa-phone"></i> +58 261-7665244 </dd>
+                    </dl>
+                </article>
+    
+
+
+                <article class="pbreak">
+                    <h5>Analista de Soporte Técnico</h5>
+                    <p>
+                        Manejo de Active Directory, contacto con el usuario, Consola
+                        HelpDesk Spiceworks, Administración del Sistema de
+                        Monitoreo Nagios en servidor CentOS, mantenimiento de
+                        bases de datos
+                    </p>
+                    <dl>
+                        <dd><i class="fas fa-calendar"></i> Oct/2012– Jul/2013 </dd>
+                        <dd><i class="fas fa-building"></i> Illusions Corporation, C. A. </dd>
+                        <dd><i class="fas fa-user"></i> Ing. Alvaro Gimon, Infraestructura Tecnológica </dd>
+                        <dd><i class="fas fa-envelope"></i> alvaro.gimon@illusionscorporation.com</dd>
+                        <dd><i class="fas fa-phone"></i> +58 261-7963346, +58 261-7963200 </dd>
+                    </dl>
+                </article>
+    
+    
+                
+                <article>
+                    <h5>Pasantía: Operador de Soporte y Redes</h5>
+                    <p>
+                        Diversidad de tareas en el área del Soporte TIC.
+                    </p>
+                    <dl>
+                        <dd><i class="fas fa-calendar"></i> Ene – Mar/2011 </dd>
+                        <dd><i class="fas fa-building"></i> <a href="http://www.hidrolago.gov.ve/" target="_blank">C. A. Hidrológica del Lago de Maracaibo</a></dd>
+                        <dd><i class="fas fa-user"></i> Ing. Luis Quijada, Ing. Eduardo Rivero </dd>
+                        <dd><i class="fas fa-phone"></i> +58 261-2007707, +58 261-2007760 </dd>
+                    </dl>
+                </article>
+    
+    
+                <article>
+                    <h5>Pasantía</h5>
+                    <p>
+                        Asistente en general, departamento de Calidad
+                        Ambiental y Recursos Humanos
+                    </p>
+                    <dl>
+                        <dd><i class="fas fa-calendar"></i> Abr – Ago/2005 </dd>
+                        <dd><i class="fas fa-building"></i> CLAM Instalaciones, S. A. </dd>
+                        <dd><i class="fas fa-phone"></i> +58 261-7320059, +58 261-1315586 </dd>
+                    </dl>
+                </article>
+    
+    
+                <article>
+                    <h5>Prácticas</h5>
+                    <p>
+                        Prácticas de desarrollo de aplicaciones en JAVA, Power Builder y MySQL
+                    </p>
+                    <dl>
+                        <dd><i class="fas fa-calendar"></i> 2005 - 2011 </dd>
+                        <dd><i class="fas fa-building"></i> Universidad Rafael Belloso Chacín </dd>
+                    </dl>
+                </article>
+
+                
+
+                <article>
+                    <h5>Prácticas</h5>
+                    <p>
+                        Prácticas en Turbo Pascal 7.0, Delphi 6.
+                    </p>
+                    <dl>
+                        <dd><i class="fas fa-calendar"></i> 2006 - 2011 </dd>
+                        <dd><i class="fas fa-building"></i> U. E. Arq. Manolo Muchacho </dd>
+                    </dl>
+                </article>
+
+            </section>
+
+
+            <!-- HABILIDADES -->
+            <section class="skills">
+                <h5><i class="fas fa-language text-purple"></i> Idiomas</h5>
+                <p>
+                    Castellano (nativo).<br>
+                    Inglés (C1).
+                </p>
+
+                <h5><i class="fab fa-aws text-purple"></i> Amazon Web Services</h5>
+                <p>
+                    EC2, S3 y CodeDeploy (básico).
+                </p>
+
+                <h5><i class="fas fa-globe text-purple"></i> Desarrollo Web</h5>
+                <p>
+                    Configuración Apache HTTP Server y IIS (básico), HTML, XML, CSS, Bootstrap.
+                </p>
+                
+                <h5><i class="fas fa-database text-purple"></i> Bases de Datos</h5>
+                <p>
+                    MySQL, SQLite, SQL Server, Firebase.
+                </p>
+
+                <h5><i class="fas fa-magic text-purple"></i> Diseño</h5>
+                <p>
+                    Inkscape y GIMP.
+                </p>
+                
+                <h5><i class="far fa-life-ring text-purple"></i> Gestion TIC</h5>
+                <p>
+                    Instalación y configuración de servidores en Ubuntu, Debian y CentOS y estaciones de trabajo con Win7+, 
+                    Active Directory, Rackspace, CrashPlan, Claro Cloud, Veem Backup. Monitoreo: Nagios, Centreon,
+                    Nagvis, Uptime Robot.<br>
+                    Mesas de ayuda: Spiceworks Help Desk (instalación, administración y uso), Bitrix24, Asana.
+                </p>
+
+                
+                <h4 class="mt-5 pbreak"><i class="fas fa-graduation-cap text-purple"></i> EDUCACIÓN</h4>
+                <p>
+                    <strong>Ingeniero en Computación</strong><br>
+                    <small class="text-muted">
+                        2006 - 2011, Universidad Dr. Rafael Belloso Chacín
+                    </small>
+                </p>
+                
+                
+                <p>
+                    <strong>Técnico Medio en Comercio y Servicios Administrativos, Mención Informática</strong><br>
+                    <small class="text-muted">
+                        2001 - 2005, Universidad Dr. Rafael Belloso Chacín
+                    </small>
+                </p>
+
+
+                <h4 class="mt-5"><i class="fas fa-certificate text-purple"></i> CURSOS</h4>
+                <p>
+                    <strong>Diplomado Diseño de Medios Web</strong><br>
+                    <small class="text-muted">
+                        200h, Universidad Dr. Rafael Belloso Chacín
+                    </small>
+                </p>
+                
+                
+                <p>
+                    <strong>Especialista Técnico en Computación</strong><br>
+                    <small class="text-muted">
+                        50h, Angeliz Computer Center
+                    </small>
+                </p>
+
+
+                <p>
+                    Instrucción autodidacta permanente en: HTML, CSS, PHP, JavaScript, JQuery, Angular, Node.Js<br>
+                    <small class="text-muted">
+                        <a target="_blank" href="https://platzi.com">https://platzi.com</a><br>
+                        <a target="_blank" href="http://www.htmldog.com">http://www.htmldog.com</a><br>
+                        <a target="_blank" href="http://www.w3schools.com">http://www.w3schools.com</a><br>
+                        <a target="_blank" href="http://www.codecademy.com/ ytaborda">http://www.codecademy.com/ ytaborda</a><br>
+                        <a target="_blank" href="http://www.codeschool.com">http://www.codeschool.com</a><br>
+                        <a target="_blank" href="http://css-tricks.com">http://css-tricks.com</a><br>
+                        <a target="_blank" href="http://stackoverflow.com">http://stackoverflow.com</a><br>
+                        <a target="_blank" href="http://caniuse.com">http://caniuse.com</a><br>
+                    </small>
+                </p>
+
+                
+            </section>
+        </main>
+        
+    </div>
+</body>
+</html>
