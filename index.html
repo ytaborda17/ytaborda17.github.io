@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,55 +8,29 @@
 
     <link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <style>
-        :root { --main-color: #57007f }
-        * { color: #3c4858 }
-        p { text-align: justify }
-        h2,
-        h3,
-        h4,
-        h5 {
-            font-weight: 700;
-            font-size: 0.98em;
-        }
-        .text-purple {  color: var(--main-color) }
-
-        header { display: grid; grid-template-columns: auto 1fr 1fr; column-gap: 10px }
-        header :nth-child(4) { grid-column: 1/4 }
-
-        main { display: grid; grid-template-columns: 70% auto; align-items: baseline; column-gap: 20px }
-        main .exp article { display: grid; grid-template-columns: 60% 1fr; column-gap: 10px }
-        main .exp article > :nth-child(1) { grid-column: 1/3; text-align: center }
-        main .exp article dl { font-size: 0.8em }
-        main .exp article dl dd { margin-left: 0px; margin-bottom: 0px; word-wrap: break-word }
-        main .exp article dl dd i { opacity: 0.6; color: var(--main-color) }
-
-        @media only print {
-            @page { size: landscape; margin: 15mm 10mm 15mm 10mm }
-            article, 
-            .skills p { font-size: 8.5pt }
-            main .exp article dl { font-size: 1em }
-            .pbreak { page-break-before: always }
-            .noprint { visibility: hidden; height: 1px !important }
-        }
-    </style>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/ico.png">
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="../img/yt.svg" alt="YT" height="56px" class="mt-1">
             <div>
-                <h1 class="m-0 p-0">Yeniree Taborda</h1>
-                <div>Desarrollador Web Full Stack</div>
+                <h1 class="m-0 p-0 text-accent">Yeniree Taborda</h1>
+                <div>Desarrollador Full Stack</div>
             </div>
-            <div class="text-right">
-                <i class="text-purple fas fa-mobile-alt"></i> (+57) 350 751 0979<br>
-                <i class="text-purple far fa-envelope"></i> <a href="mailto:ytaborda17@gmail.com?subject=Acabo de ver tu CV online">ytaborda17@gmail.com</a><br>
-                <i class="text-purple fab fa-skype"></i> <i class="text-purple fab fa-github"></i> ytaborda17<br>
+            <div>
+                <div>
+                    <i class="text-accent fas fa-mobile-alt"></i> (+57) 350 751 0979
+                </div>
+                <div>
+                    <i class="text-accent far fa-envelope"></i> <a href="mailto:ytaborda17@gmail.com?subject=Acabo de ver tu CV online">ytaborda17@gmail.com</a><br>
+                </div>
+                <div>
+                    <i class="text-accent fab fa-skype"></i>/<i class="text-accent fab fa-github"></i> ytaborda17<br>
+                </div>
             </div>
             <small class="text-muted text-justify">
-                Soy una persona responsable, aprendo muy rápido, me gusta trabajar en equipo y lo que busco en un empleo es que ofrezca buen ambiente de trabajo y la oportunidad de aprender constantemente. 
+                Soy una persona responsable, aprendo rápido, me gusta trabajar en equipo y lo que busco en un empleo es un buen ambiente de trabajo y la oportunidad de aprender. 
             </small>
         </header>
 
@@ -64,26 +38,32 @@
             <!-- EXPERIENCIA -->
             <section class="exp">
                 
+                <h2 class="text-center m-3 text-accent2">EXPERIENCIA</h2>
 
-                <!-- <article>
-                    <h5>Fullstack Developer</h5>
+                <article>
+                    <h5>Backend Developer</h5>
                     <p>
-                        NodeJs, Angular.
+                        Creación y mantenimiento de microservicios para API GaphQL en AWS con Node Js y serverless framework.<br>
+                        Monitoreo de servicios Lambda con Thundra y Apollo Studio, CI con Travis.
                     </p>
                     <dl>
-                        <dd><i class="fas fa-calendar"></i> Ago/2021 – Actualmente</dd>
+                        <dd><i class="fas fa-calendar"></i> Aug/2021 – Actualidad</dd>
                         <dd><i class="fas fa-building"></i> <a href="https://onetree.com/" target="_blank">Onetree</a></dd>
+                        <dd><i class="fas fa-user"></i> Zhian Caballero</dd>
+                        <dd><i class="fas fa-envelope"></i> <span class="word-break">zhian.caballero@onetree.com</span></dd>
+                        <dd><i class="fas fa-phone"></i> +598 2 908 4138</dd>
                     </dl>
-                </article> -->
-
+                </article>
 
                 <article>
                     <h5>Programador Web</h5>
                     <p>
-                        Desarrollo y mantenimiento de aplicaciones Web con Node.Js y Express framework, Angular con libreria Devexpress, .NET, socket.io, 
-                        HTML, CSS (Bootstrap), JS, jQuery, MySQL, Firebase Realtime Database. <br>
+                        Desarrollo y mantenimiento de aplicaciones Web con Node Js y Express framework (API REST), Angular con libreria Devexpress, socket.io, 
+                        HTML, CSS, SCSS, Bootstrap, Material Design, JavaScript, MySQL, Firebase Realtime Database y mantenimiento de aplicaciones en PHP con Yii Framework 2.0 y .NET. <br>
+                        Uso de Jenkins para auto deploy, Sonar para análisis del Código y Sentry para captura de errores en la API.<br>
+                        Implementación de pasarela de pago con <a href="https://www.placetopay.com/web/" target="_blank">Placetopay</a>. <br>
                         <small>
-                            Desarrollos: <a href="https://cotizadores.e-broker.com.co/" target="_blank">Cotizadores E-Broker</a>,  
+                            Proyectos: <a href="https://cotizadores.e-broker.com.co/" target="_blank">Cotizadores E-Broker</a>,  
                             <a href="https://cotizador.redes.co/" target="_blank">Cotizador En Red</a>, 
                             <a href="https://mesti.co/" target="_blank">Mesti - Poliza Mensual</a>
                         </small>
@@ -92,7 +72,7 @@
                         <dd><i class="fas fa-calendar"></i> Sep/2019 – Ago/2021</dd>
                         <dd><i class="fas fa-building"></i> CRP Servicios y Consultoria SAS</dd>
                         <dd><i class="fas fa-user"></i> Ing. Leonardo Sapuy</dd>
-                        <dd><i class="fas fa-envelope"></i> leonardo.sapuy<br>@cprserviciosyconsultoria.com.co</dd>
+                        <dd><i class="fas fa-envelope"></i> <span class="word-break">leonardo.sapuy@cprserviciosyconsultoria.com.co</span></dd>
                         <dd><i class="fas fa-phone"></i> +57 1 7444120</dd>
                     </dl>
                 </article>
@@ -122,6 +102,9 @@
                         de la empresa y desarrollo o mantenimiento de aplicaciones para la mejora de procesos. <br>
                         En cuanto a Gestión TIC: administrador de Firewall Cyberoam, Active Directory, Rackspace, CrashPlan, Claro Cloud, Veem Backup, monitoreo
                         constante de la red con Nagios y manejo de los reportes de gestion TIC en SQLite desde Spiceworks Help Desk. <br>
+                        <small>
+                            Projects: <a href="http://181.205.17.59:8080/" target="_blank">Intranet</a>  
+                        </small>
                     </p>
                     <dl>
                         <dd><i class="fas fa-calendar"></i> Abr/2016 – Ene/2019 </dd>
@@ -144,7 +127,7 @@
                 </article>
     
                 
-                <article> 
+                <article class="pbreak"> 
                     <h5>Programador Web</h5>
                     <p>
                         Maquetado de Sitios Web SEO con diseño responsivo garantizando compatibilidad entre múltiples navegadores, 
@@ -176,13 +159,11 @@
     
 
 
-                <article class="pbreak">
+                <article>
                     <h5>Analista de Soporte Técnico</h5>
                     <p>
-                        Manejo de Active Directory, contacto con el usuario, Consola
-                        HelpDesk Spiceworks, Administración del Sistema de
-                        Monitoreo Nagios en servidor CentOS, mantenimiento de
-                        bases de datos
+                        Manejo de Active Directory, contacto con el usuario, Consola HelpDesk Spiceworks, Administración del Sistema de
+                        Monitoreo Nagios en servidor CentOS, mantenimiento de bases de datos.
                     </p>
                     <dl>
                         <dd><i class="fas fa-calendar"></i> Oct/2012– Jul/2013 </dd>
@@ -212,8 +193,7 @@
                 <article>
                     <h5>Pasantía</h5>
                     <p>
-                        Asistente en general, departamento de Calidad
-                        Ambiental y Recursos Humanos
+                        Asistente en general, departamento de Calidad Ambiental y Recursos Humanos.
                     </p>
                     <dl>
                         <dd><i class="fas fa-calendar"></i> Abr – Ago/2005 </dd>
@@ -226,7 +206,7 @@
                 <article>
                     <h5>Prácticas</h5>
                     <p>
-                        Prácticas de desarrollo de aplicaciones en JAVA, Power Builder y MySQL
+                        Prácticas de desarrollo de aplicaciones en JAVA, Power Builder y MySQL.
                     </p>
                     <dl>
                         <dd><i class="fas fa-calendar"></i> 2005 - 2011 </dd>
@@ -252,42 +232,75 @@
 
             <!-- HABILIDADES -->
             <section class="skills">
-                <h5><i class="fas fa-language text-purple"></i> Idiomas</h5>
+                <h2 class="text-center m-3 text-accent2">HABILIDADES</h2>
+                <h5><i class="fas fa-language text-accent"></i> Idiomas</h5>
                 <p>
-                    Castellano (nativo).<br>
-                    Inglés (C1).
+                    Español (nativo).<br>
+                    <a href="en.html" title="English" class="print-nolink">Inglés</a> (<a href="https://www.efset.org/cert/dbubgj" target="_blank" title="Ver credencial">C2</a>).
                 </p>
 
-                <h5><i class="fab fa-aws text-purple"></i> Amazon Web Services</h5>
+
+                <h5><i class="fab fa-aws text-accent"></i> Amazon Web Services</h5>
                 <p>
-                    EC2, S3 y CodeDeploy (básico).
+                    Roles IAM, EC2, S3 y CodeDeploy (básico), Secret Manager, CloudWatch, Lambdas.
                 </p>
 
-                <h5><i class="fas fa-globe text-purple"></i> Desarrollo Web</h5>
+
+                <h5><i class="fas fa-globe text-accent"></i> Desarrollo Web</h5>
                 <p>
-                    Configuración Apache HTTP Server y IIS (básico), HTML, XML, CSS, Bootstrap.
+                    Angular, NodeJs, API REST y GraphQL, WebSocket, HTML, XML, CSS, SCSS, Bootstrap, JavaScript, jQuery, PHP, .NET, administración de Apache HTTP Server y IIS (básico).
                 </p>
                 
-                <h5><i class="fas fa-database text-purple"></i> Bases de Datos</h5>
+
+                <h5><i class="fas fa-database text-accent"></i> Bases de Datos</h5>
                 <p>
-                    MySQL, SQLite, SQL Server, Firebase.
+                    MySQL, SQLite, SQL Server, Firebase, MongoDB.
                 </p>
 
-                <h5><i class="fas fa-magic text-purple"></i> Diseño</h5>
+
+                <h5><i class="fab fa-trello text-accent"></i> Metodologías ágiles</h5>
+                <p>
+                    SCRUM, Kanban (en Jira y Trello).
+                </p>
+
+
+                <h5><i class="fas fa-code-branch text-accent"></i> Sistemas de control de versiones</h5>
+                <p>
+                    GitHub, Bitbucket, GitLab, Gitflow.
+                </p>
+
+
+                <h5><i class="fas fa-magic text-accent"></i> Diseño</h5>
                 <p>
                     Inkscape y GIMP.
                 </p>
                 
-                <h5><i class="far fa-life-ring text-purple"></i> Gestion TIC</h5>
+                
+                <h5><i class="far fa-life-ring text-accent"></i> Gestion TIC</h5>
                 <p>
                     Instalación y configuración de servidores en Ubuntu, Debian y CentOS y estaciones de trabajo con Win7+, 
-                    Active Directory, Rackspace, CrashPlan, Claro Cloud, Veem Backup. Monitoreo: Nagios, Centreon,
-                    Nagvis, Uptime Robot.<br>
+                    Active Directory, Rackspace, CrashPlan, Claro Cloud, Veem Backup.<br>
+                    Monitoreo: Nagios, Centreon, Nagvis, Uptime Robot.<br>
                     Mesas de ayuda: Spiceworks Help Desk (instalación, administración y uso), Bitrix24, Asana.
                 </p>
 
                 
-                <h4 class="mt-5 pbreak"><i class="fas fa-graduation-cap text-purple"></i> EDUCACIÓN</h4>
+                <h2 class="mt-4 text-center text-accent2"> EDUCACIÓN</h2>
+                
+                <p>
+                    <strong>JavaScript</strong><br>
+                    <small class="text-muted">
+                        4h, Platzi
+                    </small>
+                </p>
+                
+                <p>
+                    <strong>ECMAScript 6+</strong><br>
+                    <small class="text-muted">
+                        2h, Platzi
+                    </small>
+                </p>
+
                 <p>
                     <strong>Ingeniero en Computación</strong><br>
                     <small class="text-muted">
@@ -304,7 +317,6 @@
                 </p>
 
 
-                <h4 class="mt-5"><i class="fas fa-certificate text-purple"></i> CURSOS</h4>
                 <p>
                     <strong>Diplomado Diseño de Medios Web</strong><br>
                     <small class="text-muted">
@@ -322,7 +334,7 @@
 
 
                 <p>
-                    Instrucción autodidacta permanente en: HTML, CSS, PHP, JavaScript, JQuery, Angular, Node.Js<br>
+                    Instrucción autodidacta permanente en: HTML, CSS, PHP, JavaScript, JQuery, Angular, Node Js<br>
                     <small class="text-muted">
                         <a target="_blank" href="https://platzi.com">https://platzi.com</a><br>
                         <a target="_blank" href="http://www.htmldog.com">http://www.htmldog.com</a><br>
@@ -335,10 +347,25 @@
                     </small>
                 </p>
 
-                
+                <div class="noprint d-none d-lg-block mt-5">
+                    <button id ="print-button" type="button" class="btn btn-dark text-accent3" onclick="window.print()" title='Click aquí o prueba "Ctrl + P"'><i class="fas fa-print text-accent3"></i> Imprimir</button>
+                </div>
             </section>
         </main>
-        
+         
     </div>
+
+    <script>
+        const pb = document.getElementById('print-button');
+
+        if (navigator && navigator.userAgent && navigator.userAgent.indexOf('Firefox') > -1) {
+            pb.setAttribute('disabled', 'disabled');
+            pb.setAttribute('title', 'Puede imprimir con Opera o Google Chrome');
+            /**
+             * Hay un error en firefox con display: grid y html5, aún estoy corrigiendolo
+             * Puedes leer del tema aqui: https://tosbourn.com/firefox-printing-issue-for-grid-css/
+             */
+        } 
+    </script>
 </body>
 </html>
