@@ -1,5 +1,5 @@
-:root { --main-color: #E7D8C7; --accent-color: #FD257A; --accent-color2: #A2DD2E; --accent-color3: #35C8F5; --accent-print: #57007f; --main-print: #3c4858}
-body { background-color: #282822; font-family: 'Courier New', Courier, monospace; font-size: 0.9em }
+:root { --main-color: #c9d1d9; --accent-color: #C79FF1; --accent-color2: #ff7b72; --accent-color3: #35C8F5; --accent-color4: #A97140; --accent-color5: #4D79A1; --accent-print: #57007f; --main-print: #3c4858 }
+body { background-color: #0D1117; font-family: 'Courier New', Courier, monospace; font-size: 0.9em }
 * { color: var(--main-color) }
 p { text-align: justify }
 h2,
@@ -9,7 +9,9 @@ h5 { font-weight: 700; font-size: 0.98em }
 .text-accent {  color: var(--accent-color) }
 .text-accent2 {  color: var(--accent-color2) }
 .text-accent3, a, a:hover { color: var(--accent-color3) }
-.text-muted { color: #72675b !important }
+.text-accent4 {  color: var(--accent-color4) }
+.text-accent5 {  color: var(--accent-color5) }
+.text-muted { color: #a5d6ff !important }
 
 header { display: grid; grid-template-columns: auto 270px; column-gap: 10px }
 header > :nth-child(2) { text-align: right }
@@ -50,7 +52,7 @@ main .exp article dl dd i { color: var(--accent-color) }
 @media only screen and (max-width: 576px) {
     header { grid-template-columns: 1fr }
     header img { display: none }
-    header h1 { color: var(--accent-color); font-weight: 700;}
+    header h1 { color: var(--accent-color); font-weight: 700 }
 }
 
 
