@@ -1,115 +1,105 @@
 :root { --accent-print:#8250df; --accent-print2:#cf222e; --accent-print5:#0550ae; --main-color:#263238; }
 * { color:var(--main-color) }
-body { margin: 0; font-weight: 400; line-height: 1.5; color: #212529; text-align: left; background-color:#f6f8fa; --accent-color:#8250df; --accent-color2:#cf222e; --accent-color3:#0550ae; --accent-color4:#0550ae; --accent-color5:#0550ae; font-family:'Courier New', Courier, monospace; font-size:0.9em }
-body.dark { background-color:#0D1117; --main-color:#c9d1d9; --accent-color:#C79FF1; --accent-color2:#ff7b72; --accent-color3:#35C8F5; --accent-color4:#A97140; --accent-color5:#4D79A1 }
-p { margin-top:0; margin-bottom:1rem; text-align:justify }
-h1, h2, h3, h4, h5, h6 { margin-bottom: 0.5rem; font-family: inherit; line-height: 1.2 }
-h1 { font-size:4em }
-h2,
-h3,
-h4,
-h5 { font-weight:700; font-size:0.98em }
+body { margin:0; font-weight:400; line-height:1.5; color:#212529; text-align:left; background-color:#f6f8fa; --accent-color:#6f42c1; --accent-color2:#d73a49; --accent-color3:#e36209; --accent-color4:#005cc5; font-family:'Courier New', Courier, monospace; font-size:14px }
+body.dark { background-color:#24292e; --main-color:#c9d1d9; --accent-color:#b392f0; --accent-color2:#f97583; --accent-color3:#ffab70; --accent-color4:#79b8ff; }
+body.dark footer { background-color:#0D1117; }
+p { margin-top:0; margin-bottom:1rem; text-align:justify; font-size:0.8em }
+h1, h2, h3, h4, h5 { margin-bottom:0.3rem; font-family:inherit; line-height:1.2; font-weight:700 }
+h2, h3, h4, h5 { font-size:0.98em}
+dl { margin:0 }
+i { color:var(--accent-color) }
 .text-accent {  color:var(--accent-color) }
 .text-accent2 {  color:var(--accent-color2) }
 .text-accent3, a, a:hover { color:var(--accent-color3) }
-.text-accent4 {  color:var(--accent-color4) }
-.text-accent5 {  color:var(--accent-color5) }
+.text-accent4 { color:var(--accent-color4) }
 
-header { display:grid; grid-template-columns:auto 198px; column-gap:10px }
-header h1 { margin:0; padding: 0 }
+header { display:grid; grid-template-columns:auto 208px; column-gap:10px }
+header h1 { margin:0; padding:0 }
 header > :nth-child(2) { text-align:right }
 header :nth-child(3) { grid-column:1/3 }
-header :nth-child(4) { display:grid; grid-template-columns:auto 60px; }
+header :nth-child(5) { display:grid; grid-template-columns:auto 120px; }
+header .noprint i, header .noprint a { color:var(--accent-color4) }
 
-main { display:grid; grid-template-columns:70% auto; column-gap:20px; margin-top: 1.5rem }
-main .exp h2 { margin: 1rem }
-main .exp article { display:grid; grid-template-columns:59% 1fr; column-gap:10px }
+main { display:grid; grid-template-columns:70% auto; column-gap:20px }
+main .exp article { display:grid; grid-template-columns:70% 1fr; column-gap:10px }
 main .exp article > :nth-child(1) { grid-column:1/3; text-align:center }
-main .exp article dl { font-size:0.8em }
+main .exp article dt { color:var(--accent-color); font-style:italic }
+main .exp article dl+dl { font-size:0.8em }
 main .exp article dl dd { margin-left:0px; margin-bottom:0px; word-wrap:break-word }
-main .exp article dl dd i { color:var(--accent-color) }
-main .exp article h5 { margin-top:0 }
+
+footer { margin-top: 3em; background-color:#E9E8E8 }
+footer .container { padding:2em 0 }
 
 .word-break { word-break:break-all }
-
+.invisible { display:none!important }
 
 .switch { position:relative; display:inline-block; width:34px; height:18px }
 .switch input { opacity:0; width:0; height:0 }
 .slider { position:absolute; cursor:pointer; top:0; left:0; right:0; bottom:0; background-color:#ccc; -webkit-transition:.4s; transition:.4s }
 .slider:before { position:absolute; content:""; height:12px; width:12px; left:4px; bottom:3px; background-color:white; -webkit-transition:.4s; transition:.4s }
-input:checked + .slider { background-color:var(--accent-color3) }
-input:focus + .slider { box-shadow:0 0 1px var(--accent-color3) }
+input:checked + .slider { background-color:var(--accent-color4) }
+input:focus + .slider { box-shadow:0 0 1px var(--accent-color4) }
 input:checked + .slider:before { -webkit-transform:translateX(16px); -ms-transform:translateX(26px); transform:translateX(14px) }
 .slider.round { border-radius:34px }
 .slider.round:before { border-radius:50% }
 
-
-/* Bootstrap */
-.container { padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto }
-.text-muted { color:#6c757d!important }
-.text-justify { text-align:justify!important }
-.text-center { text-align: center!important }
-.invisible { display: none} 
-.btn { display: inline-block; text-align: center; white-space: nowrap; vertical-align: middle; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; border: 1px solid transparent; padding: 0.375rem 0.75rem; font-size: 1rem; line-height: 1.5; border-radius: 0.25rem; transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out }
-.btn-dark { color: #fff; background-color: #343a40; border-color: #343a40 }
-.btn-dark:hover { color: #fff; background-color: #23272b; border-color: #1d2124 }
-.btn:focus, .btn:hover { text-decoration: none }
-.btn:not(:disabled):not(.disabled) { cursor: pointer }
+.container { padding-right:15px; padding-left:15px; margin-right:auto; margin-left:auto }
+.text-muted { opacity:0.8 }
+.text-center { text-align:center!important }
+.btn { display:inline-block; text-align:center; text-decoration:none; white-space:nowrap; vertical-align:middle; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none; border:1px solid transparent; padding:0.375rem 0.75rem; font-size:1rem; line-height:1.5; border-radius:0.25rem; transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out }
+.btn-dark { color:#fff; background-color:#343a40; border-color:#343a40 }
+.btn-dark:hover { color:#fff; background-color:#23272b; border-color:#1d2124 }
+.btn:not(:disabled):not(.disabled) { cursor:pointer }
 
 @media only screen {
     header { margin-top:30px }
 }
-
 @media only screen and (min-width:992px) {
     .d-lg-block { display:block!important;}
 }
 @media only screen and (max-width:992px) {
-    .container { max-width: 960px }
+    .container { max-width:960px }
     main { grid-template-columns:1fr }
 }
-
 @media only screen and (max-width:768px) {
-    .container { max-width: 720px }
+    .container { max-width:720px }
     header { grid-template-columns:1fr }
     header * { text-align:center }
     header > :nth-child(2) { display:block; grid-column:1/3; grid-row:3/3; text-align:center }
     header > :nth-child(2) > div { display:inline-block }
     main .exp article { grid-template-columns:100% }
     main .exp article p { margin-bottom:0 }
-    main .exp article dl { grid-column:1/2; text-align:center }
+    main .exp article dl { grid-column:1/2 }
+    main .exp article dl:last-child { grid-row:2/3; text-align:center }
     main .exp article dl dd { display:inline-block }
-    main .exp article h5, 
-    main .skills h5 { margin-top:30px }
+    main .exp article h5,
+    main .exp h2,
+    main .skills h2 { margin-top:3em }
+    main .exp h5:first-of-type, main .skills h5:first-of-type { margin-top:1.5em }
+    main .skills h2:nth-of-type(2) { margin-bottom:1.2em }
     main .skills * { text-align:center }
 }
-
 @media only screen and (max-width:576px) {
-    .container { max-width: 540px }
+    .container { max-width:540px }
     header { grid-template-columns:1fr }
     header > :nth-child(2) { display:grid }
     header > :nth-child(2) :last-child { grid-column:1/3; align-self:center }
 }
-
-@media only screen and (min-width: 1200px) {
-    .container { max-width: 1140px }
+@media only screen and (min-width:1200px) {
+    .container { max-width:1140px }
 }
-
 @media only print {
     @page { size:landscape; margin:15mm 10mm 15mm 10mm }
     * { color:#000 }
     header { font-size:0.8em }
     main .exp article dl { font-size:7pt }
-    .exp h5,
-    .skills h5 { font-size:9pt !important }
-    article,
-    .skills p { font-size:7pt }
+    .exp h5, .skills h5 { font-size:9pt !important }
+    article, .skills p { font-size:7pt }
     .pbreak { page-break-before:always }
-    .noprint { visibility:hidden; height:1px !important }
+    .noprint { display:none; visibility:hidden; height:1px!important }
     a { text-decoration:none !important }
     a.print-nolink { color:var(--main-color) }
-    .text-accent,
-    i { color:var(--accent-print) !important }
-    .text-accent4,
-    .text-accent5 { color:var(--accent-print5) }
-    .text-accent2 { color:var(--accent-print2) }
+    .text-accent, i { color:var(--accent-print) !important }
+    .text-accent2 { color:var(--accent-print2)!important }
+    .text-accent4 { color:var(--accent-print5)!important }
 }

@@ -4,7 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>YTaborda - CV</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Yeni Taborda, CV-ES</title>
+    <meta name="title" content="Yeni Taborda, CV-ES">
+    <meta name="description" content="Ing. en Computación, Desarrollador Web Full Stack">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ytaborda17.github.io/">
+    <meta property="og:title" content="Yeni Taborda, CV-ES">
+    <meta property="og:description" content="Ing. en Computación, Desarrollador Web Full Stack">
+    <meta property="og:image" content="//ytaborda17.github.io/img/yt.svg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ytaborda17.github.io/">
+    <meta property="twitter:title" content="Yeni Taborda, CV-ES">
+    <meta property="twitter:description" content="Ing. en Computación, Desarrollador Web Full Stack">
+    <meta property="twitter:image" content="//ytaborda17.github.io/img/yt.svg">
+
     <link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/ico.png">
     <link href="./css/home.css" rel="stylesheet">
@@ -13,8 +32,11 @@
     <div class="container">
         <header>
             <div>
-                <h1 class="text-accent">Yeniree Taborda</h1>
+                <h1 class="text-accent">Yeni Taborda</h1>
                 <div>Ing. en Computación, Desarrollador Web Full Stack</div>
+                <small class="text-muted">
+                    Soy una persona responsable, aprendo rápido, me gusta trabajar en equipo y lo que busco en un empleo es un buen ambiente de trabajo y la oportunidad de aprender. 
+                </small>
             </div>
             <div>
                 <div>
@@ -24,25 +46,23 @@
                     <i class="text-accent fas fa-mobile-alt"></i> (+57) 350 751 0979
                 </div>
                 <div>
-                    <i class="text-accent fab fa-skype"></i>/<i class="text-accent fab fa-github"></i> ytaborda17<br>
+                    <i class="text-accent fab fa-github"></i> <a href="https://github.com/ytaborda17" target="_blank">ytaborda17</a>
+                    <i class="text-accent fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/ytaborda/" target="_blank">ytaborda</a><br>
                 </div>
                 <div class="noprint">
-                    <span>
-                        <i class="fas fa-sun"></i>
+                    <span title="Nivel de contraste">
+                        <i class="fas fa-sun" title="Claro"></i>
                         <label class="switch">
                             <input type="checkbox" id="theme-switch">
                             <span class="slider round"></span>
                         </label>
-                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-moon" title="Oscuro"></i>
                     </span>
-                    <span>
-                        ES/<a href="en.html" title="English" class="print-nolink">EN</a>
+                    <span title="Idioma">
+                        <i class="fas fa-language"></i> ES/<a href="en.html" class="lang" data-lang="EN" title="English" class="print-nolink">EN</a>/<a href="fr.html" class="lang" data-lang="FR" title="Français" class="print-nolink">FR</a>
                     </span>
                 </div>
             </div>
-            <small class="text-muted text-justify">
-                Soy una persona responsable, aprendo rápido, me gusta trabajar en equipo y lo que busco en un empleo es un buen ambiente de trabajo y la oportunidad de aprender. 
-            </small>
         </header>
 
         <main>
@@ -52,13 +72,17 @@
                 <h2 class="text-center text-accent2">EXPERIENCIA</h2>
 
                 <article>
-                    <h5 class="text-accent4">Backend Developer</h5>
-                    <p>
-                        Creación y mantenimiento de microservicios para API GaphQL en AWS con Node Js y serverless framework.<br>
-                        Monitoreo de servicios Lambda con Thundra y Apollo Studio, CI con Travis.
-                    </p>
+                    <h5 class="text-accent4">Desarrollador Backend</h5>
                     <dl>
-                        <dd><i class="fas fa-calendar"></i> Aug/2021 – Actualidad</dd>
+                        <dd>· Creación y mantenimiento de microservicios para API GaphQL en AWS con Node Js y serverless framework con pruebas unitarias en Jest.</dd>
+                        <dd>· Integración de VTEX API con Mobile APP.</dd>
+                        <dd>· Monitoreo de servicios con Thundra, Apollo Studio y Cloud Watch.</dd>
+                        <dd>· Integración de notificaciones push con CleverTap.</dd>
+                        <dd>· Implementación de colas de DynamoDB Stream con colas SQS y DLQ con Cloud Formation desde serverless.</dd>
+                        <dd>· Proyectos: <a href="https://www.tadadelivery.com.mx/" target="_blank">TaDa Delivery</a></dd>
+                    </dl>
+                    <dl>
+                        <dd><i class="fas fa-calendar"></i> Ago/2021 – Actualidad</dd>
                         <dd><i class="fas fa-building"></i> <a href="https://onetree.com/" target="_blank">Onetree</a></dd>
                         <dd><i class="fas fa-user"></i> Zhian Caballero</dd>
                         <dd><i class="fas fa-envelope"></i> <span class="word-break">zhian.caballero@onetree.com</span></dd>
@@ -68,17 +92,20 @@
 
                 <article>
                     <h5 class="text-accent4">Programador Web</h5>
-                    <p>
-                        Desarrollo y mantenimiento de aplicaciones Web con Node Js y Express framework (API REST), Angular con libreria Devexpress, socket.io, 
-                        HTML, CSS, SCSS, Bootstrap, Material Design, JavaScript, MySQL, Firebase Realtime Database y mantenimiento de aplicaciones en PHP con Yii Framework 2.0 y .NET. <br>
-                        Uso de Jenkins para auto deploy, Sonar para análisis del Código y Sentry para captura de errores en la API.<br>
-                        Implementación de pasarela de pago con <a href="https://www.placetopay.com/web/" target="_blank">Placetopay</a>. <br>
-                        <small>
-                            Proyectos: <a href="https://cotizadores.e-broker.com.co/" target="_blank">Cotizadores E-Broker</a>,  
+                    <dl>
+                        <dd>· API REST con Node Js y Express framework en arquitectura monolítica.</dd>
+                        <dd>· SPA con Angular 9+ con libreria Devexpress, socket.io</dd>
+                        <dd>· Administración de bases de datos en MySQL y Firebase Realtime Database.</dd>
+                        <dd>· Mantenimiento de aplicaciones en PHP con Yii Framework 2.0 y .NET.</dd>
+                        <dd>· CI/CD en Jenkins.</dd>
+                        <dd>· Análisis del Código con Sonar y monitoreo de errores en Sentry.</dd>
+                        <dd>· Implementación de pasarela de pago con <a href="https://www.placetopay.com/web/" target="_blank">Placetopay</a>.</dd>
+                        <dd>
+                            · Proyectos: <a href="https://cotizadores.e-broker.com.co/" target="_blank">Cotizadores E-Broker</a>,  
                             <a href="https://cotizador.redes.co/" target="_blank">Cotizador En Red</a>, 
                             <a href="https://mesti.co/" target="_blank">Mesti - Poliza Mensual</a>
-                        </small>
-                    </p>
+                        </dd>
+                    </dl>
                     <dl>
                         <dd><i class="fas fa-calendar"></i> Sep/2019 – Ago/2021</dd>
                         <dd><i class="fas fa-building"></i> CRP Servicios y Consultoria SAS</dd>
@@ -91,12 +118,13 @@
 
 
                 <article class="noprint">
-                    <h5 class="text-accent4">Freelancer</h5>
-                    <p>
-                        Desarrollo de aplicaciones en ambiente web (Front y Back End) en .NET, C# y libreria Devexpress.
-                    </p>
+                    <h5 class="text-accent4">Programador Web</h5>
+                    <dl>
+                        <dd>Desarrollo de aplicaciones en ambiente web (Front y Back End) en .NET, C# y libreria Devexpress.</dd>
+                    </dl>
                     <dl>
                         <dd><i class="fas fa-calendar"></i> Mar/2019 – Sep/2019 </dd>
+                        <dd><i class="fas fa-building"></i> Independiente</dd>
                     </dl>
                 </article>
     
@@ -104,19 +132,26 @@
 
     
                 <article>
-                    <h5 class="text-accent4">Coord. Desarrollo de Software</h5>
-                    <p>
-                        Para desarrollo y gestión de aplicaciones: PHP, SQL Server, JavaScript, jQuery, HTML, CSS, Yii Framework para desarrollo
-                        con architectura MVC, Bootstrap como librería de estilos, mantenimiento de antiguas aplicaciones en Java, Visual
-                        FoxPro y Visual Basic.
-                        Como responsabilidades generales: garantizar la disponibilidad de la infraestructura tecnológica a los usuarios
-                        de la empresa y desarrollo o mantenimiento de aplicaciones para la mejora de procesos. <br>
-                        En cuanto a Gestión TIC: administrador de Firewall Cyberoam, Active Directory, Rackspace, CrashPlan, Claro Cloud, Veem Backup, monitoreo
-                        constante de la red con Nagios y manejo de los reportes de gestion TIC en SQLite desde Spiceworks Help Desk. <br>
-                        <small>
-                            Projects: <a href="http://181.205.17.59:8080/" target="_blank">Intranet</a>  
-                        </small>
-                    </p>
+                    <h5 class="text-accent4">Coordinador de Desarrollo de Software</h5>
+                    <dl>
+                        <dt>Desarrollo de software:</dt>
+                        <dd>· Se desarrollo una <a href="http://200.91.230.155:8080/" target="_blank">Intranet</a> para generar reportes gerenciales y concilicación
+                            bancaria sobre una arquitectura monolítica con PHP + Yii Framework y estructura MV, en conjunto con lenguajes como JavaScript, 
+                            jQuery, HTML, CSS and Bootstrap como framework de estilos.
+                        </dd>
+                        <dd>· Mantenimiento de aplicaciones Web en Java y Visual FoxPro.</dd>
+                        <dt>Gestión TIC:</dt>
+                        <dd>· Implementación de plataforma Spiceworks HelpDesk para manejo de solicitudes e inventario, al mismo tiempo esta herramienta se usó 
+                            para generar reportes mensuales a la gerencia comparando el desempeño contra la cantidad de solicitudes generadas por departamento.
+                        </dd>
+                        <dd>· 
+                            Implementación y gestión de sistema de monitereo fue necesario para tener total visualización de la infraestructura tecnológica, para ello, se implementó, 
+                            Nagios y Nagvis en CentOS, a través de Centreon, con estas herramiantas se generan alertas sobre cualquier problema en la red, también sirvió para demostrar fallas
+                            a proveedores, al mismo tiempo se uso para demostrar el correcto funcionamiento de la infraestructura.
+                        </dd>
+                        <dd>· Administración de bases de datos en SQLServer y SQLite.</dd>
+                        <dd>· Otras responsabilidades incluyen administracion de Firewall Cyberoam, Active Directory, correo electrónico en Rackspace y gestión de respaldos en CrashPlan, Claro Cloud, Veem Backup.</dd>
+                    </dl>
                     <dl>
                         <dd><i class="fas fa-calendar"></i> Abr/2016 – Ene/2019 </dd>
                         <dd><i class="fas fa-building"></i> <a target="_blank" href="https://duquesa.com.co/">Duquesa S.A.</a> </dd>
@@ -128,37 +163,38 @@
     
                 
                 <article class="noprint">
-                    <h5 class="text-accent4">Freelancer</h5>
-                    <p>
-                        Desarrollo de aplicaciones en ambiente web (Front y Back End) en PHP, Bootstrap, administración de correos y servidores Web.
-                    </p>
+                    <h5 class="text-accent4">Programador Web</h5>
+                    <dl>
+                        <dd>Desarrollo de aplicaciones en ambiente web (Front y Back End) en PHP, Bootstrap, administración de correos y servidores Web.</dd>
+                    </dl>
                     <dl>
                         <dd><i class="fas fa-calendar"></i> Jun/2015 – Nov/2016 </dd>
+                        <dd><i class="fas fa-building"></i> Independiente</dd>
                     </dl>
                 </article>
     
                 
-                <article class="pbreak"> 
+                <article class="_pbreak"> 
                     <h5 class="text-accent4">Programador Web</h5>
-                    <p>
-                        Maquetado de Sitios Web SEO con diseño responsivo garantizando compatibilidad entre múltiples navegadores, 
-                        incluyendo IE7+, con el uso de HTML, CSS, JavaScript, jQuery. 
-                    </p>
+                    <dl>
+                        <dd>· Maquetado de Sitios Web SEO con diseño responsivo (HTML, CSS, JavaScript, jQuery).</dd>
+                        <dd>· Pruebas de compatibilidad entre múltiples navegadores, incluyendo IE7+. </dd>
+                    </dl>
                     <dl>
                         <dd><i class="fas fa-calendar"></i> Mar/2015 – Jun/2015 </dd>
                         <dd><i class="fas fa-building"></i> <a href="https://www.webfindyou.com/" target="_blank">Web Find You</a></dd>
                         <dd><i class="fas fa-user"></i> Ing. Oscar Salazar, Gerente de Programación </dd>
-                        <dd><i class="fas fa-envelope"></i> osalazar@webfindyou.com </dd>
+                        <dd><i class="fas fa-envelope"></i>/<i class="text-accent fab fa-skype"></i> osalazar@webfindyou.com </dd>
                         <dd><i class="fas fa-phone"></i> +58 261-9353958, +58 261-4153752 </dd>
                     </dl>
                 </article>                
     
                 
                 <article>
-                    <h5 class="text-accent4">Programador Jr.</h5>
-                    <p>
-                        Desarrollo de aplicaciones Web, basadas en HTML, CSS, PHP, MySQL, JavaScript, jQuery, XML, CURL. 
-                    </p>
+                    <h5 class="text-accent4">Programador Web Jr.</h5>
+                    <dl>
+                        <dd>Desarrollo de aplicaciones Web, basadas en HTML, CSS, PHP, MySQL, JavaScript, jQuery, XML, CURL.</dd>
+                    </dl>
                     <dl>
                         <dd><i class="fas fa-calendar"></i> Jul/2013 – May/2014  </dd>
                         <dd><i class="fas fa-building"></i> Avacom Innovación 360 </dd>
@@ -172,10 +208,12 @@
 
                 <article>
                     <h5 class="text-accent4">Analista de Soporte Técnico</h5>
-                    <p>
-                        Manejo de Active Directory, contacto con el usuario, Consola HelpDesk Spiceworks, Administración del Sistema de
-                        Monitoreo Nagios en servidor CentOS, mantenimiento de bases de datos.
-                    </p>
+                    <dl>
+                        <dd>· Manejo de Active Directory.</dd>
+                        <dd>· Call center o contacto con el usuario.</dd>
+                        <dd>· Administración de consola HelpDesk Spiceworks, y sistema de monitoreo basado en Nagios (CentOS).</dd>
+                        <dd>· Mantenimiento de bases de datos.</dd>
+                    </dl>
                     <dl>
                         <dd><i class="fas fa-calendar"></i> Oct/2012 – Jul/2013 </dd>
                         <dd><i class="fas fa-building"></i> Illusions Corporation, C. A. </dd>
@@ -189,9 +227,9 @@
                 
                 <article>
                     <h5 class="text-accent4">Pasantía: Operador de Soporte y Redes</h5>
-                    <p>
-                        Diversidad de tareas en el área del Soporte TIC.
-                    </p>
+                    <dl>
+                        <dd>Diversidad de tareas en el área del Soporte TIC.</dd>
+                    </dl>
                     <dl>
                         <dd><i class="fas fa-calendar"></i> Ene – Mar/2011 </dd>
                         <dd><i class="fas fa-building"></i> <a href="http://www.hidrolago.gov.ve/" target="_blank">C. A. Hidrológica del Lago de Maracaibo</a></dd>
@@ -203,9 +241,9 @@
     
                 <article>
                     <h5 class="text-accent4">Pasantía</h5>
-                    <p>
-                        Asistente en general, departamento de Calidad Ambiental y Recursos Humanos.
-                    </p>
+                    <dl>
+                        <dd>Asistente en general, departamento de Calidad Ambiental y Recursos Humanos.</dd>
+                    </dl>
                     <dl>
                         <dd><i class="fas fa-calendar"></i> Abr – Ago/2005 </dd>
                         <dd><i class="fas fa-building"></i> CLAM Instalaciones, S. A. </dd>
@@ -216,11 +254,11 @@
     
                 <article>
                     <h5 class="text-accent4">Prácticas</h5>
-                    <p>
-                        Prácticas de desarrollo de aplicaciones en JAVA, Power Builder y MySQL.
-                    </p>
                     <dl>
-                        <dd><i class="fas fa-calendar"></i> 2005 - 2011 </dd>
+                        <dd>Prácticas de desarrollo de aplicaciones en JAVA, Power Builder y MySQL.</dd>
+                    </dl>
+                    <dl>
+                        <dd><i class="fas fa-calendar"></i> 2006 - 2011 </dd>
                         <dd><i class="fas fa-building"></i> Universidad Rafael Belloso Chacín </dd>
                     </dl>
                 </article>
@@ -229,11 +267,11 @@
 
                 <article>
                     <h5 class="text-accent4">Prácticas</h5>
-                    <p>
-                        Prácticas en Turbo Pascal 7.0, Delphi 6.
-                    </p>
                     <dl>
-                        <dd><i class="fas fa-calendar"></i> 2006 - 2011 </dd>
+                        <dd>Prácticas en Turbo Pascal 7.0, Delphi 6.</dd>
+                    </dl>
+                    <dl>
+                        <dd><i class="fas fa-calendar"></i> 2003 - 2005 </dd>
                         <dd><i class="fas fa-building"></i> U. E. Arq. Manolo Muchacho </dd>
                     </dl>
                 </article>
@@ -244,50 +282,50 @@
             <!-- HABILIDADES -->
             <section class="skills">
                 <h2 class="text-center text-accent2">HABILIDADES</h2>
-                <h5 class="text-accent5"><i class="fas fa-language text-accent"></i> Idiomas</h5>
+                <h5 class="text-accent4"><i class="fas fa-language text-accent"></i> Idiomas</h5>
                 <p>
-                    Español (nativo).<br>
-                    <a href="en.html" title="English" class="print-nolink">Inglés</a> (<a href="https://www.efset.org/cert/dbubgj" target="_blank" title="Ver credencial">C2</a>).
+                    Español/Nativo.<br>
+                    Inglés/Avanzado (<a href="https://www.efset.org/cert/dbubgj" target="_blank" title="Ver credencial">EFSET C2</a>).
                 </p>
 
 
-                <h5 class="text-accent5"><i class="fab fa-aws text-accent"></i> Amazon Web Services</h5>
+                <h5 class="text-accent4"><i class="fab fa-aws text-accent"></i> Amazon Web Services</h5>
                 <p>
-                    Roles IAM, EC2, S3 y CodeDeploy (básico), Secret Manager, CloudWatch, Lambdas.
+                    Roles IAM, EC2, S3 y CodeDeploy (básico), Secret Manager, CloudWatch, Lambda, Cloud Formation, Cognito, IAM, S3.
                 </p>
 
 
-                <h5 class="text-accent5"><i class="fas fa-globe text-accent"></i> Desarrollo Web</h5>
+                <h5 class="text-accent4"><i class="fas fa-globe text-accent"></i> Desarrollo Web</h5>
                 <p>
-                    Angular, NodeJs, API REST y GraphQL, WebSocket, HTML, XML, CSS, SCSS, Bootstrap, JavaScript, jQuery, PHP, .NET, administración de Apache HTTP Server y IIS (básico).
+                    Angular, NodeJs, API REST y GraphQL, WebSocket, HTML, XML, CSS, SCSS, Bootstrap, JavaScript, jQuery, PHP, .NET, C#, administración de Apache HTTP Server y IIS (básico).
                 </p>
                 
 
-                <h5 class="text-accent5"><i class="fas fa-database text-accent"></i> Bases de Datos</h5>
+                <h5 class="text-accent4"><i class="fas fa-database text-accent"></i> Bases de Datos</h5>
                 <p>
                     MySQL, SQLite, SQL Server, Firebase, MongoDB.
                 </p>
 
 
-                <h5 class="text-accent5"><i class="fab fa-trello text-accent"></i> Metodologías ágiles</h5>
+                <h5 class="text-accent4"><i class="fab fa-trello text-accent"></i> Metodologías ágiles</h5>
                 <p>
                     SCRUM, Kanban (en Jira y Trello).
                 </p>
 
 
-                <h5 class="text-accent5"><i class="fas fa-code-branch text-accent"></i> Sistemas de control de versiones</h5>
+                <h5 class="text-accent4"><i class="fas fa-code-branch text-accent"></i> Sistemas de control de versiones</h5>
                 <p>
                     GitHub, Bitbucket, GitLab, Gitflow.
                 </p>
 
 
-                <h5 class="text-accent5"><i class="fas fa-magic text-accent"></i> Diseño</h5>
+                <h5 class="text-accent4"><i class="fas fa-magic text-accent"></i> Diseño</h5>
                 <p>
-                    Inkscape y GIMP.
+                    Inkscape, GIMP.
                 </p>
                 
                 
-                <h5 class="text-accent5"><i class="far fa-life-ring text-accent"></i> Gestion TIC</h5>
+                <h5 class="text-accent4 pbreak"><i class="far fa-life-ring text-accent"></i> Gestion TIC</h5>
                 <p>
                     Instalación y configuración de servidores en Ubuntu, Debian y CentOS y estaciones de trabajo con Win7+, 
                     Active Directory, Rackspace, CrashPlan, Claro Cloud, Veem Backup.<br>
@@ -299,63 +337,63 @@
                 <h2 class="text-center text-accent2"> EDUCACIÓN</h2>
                 
                 <p>
-                    <strong class="text-accent5">JavaScript</strong><br>
-                    <small class="text-muted">
+                    <strong class="text-accent4">JavaScript</strong> (<a href="https://platzi.com/p/ytaborda17/curso/2327-javascript-practico-2021/diploma/detalle/" target="_blank">Ver certificado</a>)<br>
+                    <span class="text-muted">
                         4h, Platzi
-                    </small>
+                    </span>
                 </p>
                 
                 <p>
-                    <strong class="text-accent5">ECMAScript 6+</strong><br>
-                    <small class="text-muted">
+                    <strong class="text-accent4">ECMAScript 6+</strong> (<a href="https://platzi.com/p/ytaborda17/curso/1815-ecmascript-6/diploma/detalle/" target="_blank">Ver certificado</a>)<br>
+                    <span class="text-muted">
                         2h, Platzi
-                    </small>
+                    </span>
                 </p>
 
                 <p>
-                    <strong class="text-accent5">Ingeniero en Computación</strong><br>
-                    <small class="text-muted">
+                    <strong class="text-accent4">Ingeniero en Computación</strong><br>
+                    <span class="text-muted">
                         2006 - 2011, Universidad Dr. Rafael Belloso Chacín
-                    </small>
+                    </span>
                 </p>
                 
                 
                 <p>
-                    <strong class="text-accent5">Técnico Medio en Comercio y Servicios Administrativos, Mención Informática</strong><br>
-                    <small class="text-muted">
+                    <strong class="text-accent4">Técnico Medio en Comercio y Servicios Administrativos, Mención Informática</strong><br>
+                    <span class="text-muted">
                         2001 - 2005, Universidad Dr. Rafael Belloso Chacín
-                    </small>
+                    </span>
                 </p>
 
 
                 <p>
-                    <strong class="text-accent5">Diplomado Diseño de Medios Web</strong><br>
-                    <small class="text-muted">
+                    <strong class="text-accent4">Diplomado Diseño de Medios Web</strong><br>
+                    <span class="text-muted">
                         200h, Universidad Dr. Rafael Belloso Chacín
-                    </small>
+                    </span>
                 </p>
                 
                 
                 <p>
-                    <strong class="text-accent5">Especialista Técnico en Computación</strong><br>
-                    <small class="text-muted">
+                    <strong class="text-accent4">Especialista Técnico en Computación</strong><br>
+                    <span class="text-muted">
                         50h, Angeliz Computer Center
-                    </small>
+                    </span>
                 </p>
 
 
-                <p>
-                    Instrucción autodidacta permanente en: HTML, CSS, PHP, JavaScript, JQuery, Angular, Node Js<br>
-                    <small class="text-muted">
-                        <a target="_blank" href="https://platzi.com">https://platzi.com</a><br>
-                        <a target="_blank" href="http://www.htmldog.com">http://www.htmldog.com</a><br>
-                        <a target="_blank" href="http://www.w3schools.com">http://www.w3schools.com</a><br>
-                        <a target="_blank" href="http://www.codecademy.com/ ytaborda">http://www.codecademy.com/ ytaborda</a><br>
-                        <a target="_blank" href="http://www.codeschool.com">http://www.codeschool.com</a><br>
-                        <a target="_blank" href="http://css-tricks.com">http://css-tricks.com</a><br>
-                        <a target="_blank" href="http://stackoverflow.com">http://stackoverflow.com</a><br>
-                        <a target="_blank" href="http://caniuse.com">http://caniuse.com</a><br>
-                    </small>
+                <p class="noprint">
+                    <strong class="text-accent">Instrucción autodidacta permanente en: HTML, CSS, PHP, JavaScript, JQuery, Angular, Node Js</strong><br>
+                    <span class="text-muted">
+                        <a target="_blank" href="https://www.crehana.com/co/">Crehana</a><br>
+                        <a target="_blank" href="https://platzi.com">Platzi</a><br>
+                        <a target="_blank" href="http://www.htmldog.com">HTML Dog</a><br>
+                        <a target="_blank" href="http://www.w3schools.com">W3 Schools</a><br>
+                        <a target="_blank" href="https://www.codecademy.com/profiles/ytaborda">Codecademy</a><br>
+                        <a target="_blank" href="http://css-tricks.com">CSS Tricks</a><br>
+                        <a target="_blank" href="http://stackoverflow.com">Stackoverflow</a><br>
+                        <a target="_blank" href="http://caniuse.com">Can I use</a><br>
+                    </span>
                 </p>
 
                 <div class="noprint invisible d-lg-block">
@@ -365,6 +403,7 @@
         </main>
          
     </div>
+    <footer class="noprint"></footer>
     <script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>

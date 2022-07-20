@@ -8,7 +8,7 @@
    version="1.1"
    id="svg5"
    sodipodi:docname="yt.svg"
-   inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -27,82 +27,101 @@
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:zoom="0.75098905"
-     inkscape:cx="370.1785"
+     inkscape:cx="214.38395"
      inkscape:cy="111.8525"
      inkscape:window-width="2560"
      inkscape:window-height="1052"
      inkscape:window-x="0"
      inkscape:window-y="28"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1">
+     inkscape:current-layer="layer2"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1">
     <sodipodi:guide
        position="0,76.903999"
        orientation="0,510.23622"
-       id="guide7040" />
+       id="guide7040"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="135,76.903999"
        orientation="290.66078,0"
-       id="guide7042" />
+       id="guide7042"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="135,0"
        orientation="0,-510.23622"
-       id="guide7044" />
+       id="guide7044"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="0,0"
        orientation="-290.66078,0"
-       id="guide7046" />
+       id="guide7046"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="57.305786,57.12907"
        orientation="0,-1"
-       id="guide7048" />
+       id="guide7048"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="83.581352,57.101352"
        orientation="1,0"
-       id="guide7050" />
+       id="guide7050"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="23.619978,2.8521785"
        orientation="1,0"
-       id="guide8962" />
+       id="guide8962"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="27.36632,76.903996"
        orientation="1,0"
-       id="guide9545" />
+       id="guide9545"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="10.043965,30.90272"
        orientation="1,0"
-       id="guide11145" />
+       id="guide11145"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="31.357778,57.12907"
        orientation="1,0"
-       id="guide11185" />
+       id="guide11185"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="107.93046,57.129992"
        orientation="1,0"
-       id="guide11187" />
+       id="guide11187"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="64.704935,3.2861327e-07"
        orientation="1,0"
-       id="guide11189" />
+       id="guide11189"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="127.99089,57.138192"
        orientation="1,0"
-       id="guide11191" />
+       id="guide11191"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="48.629308,76.903996"
        orientation="1,0"
-       id="guide11231" />
+       id="guide11231"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="10.043965,30.902719"
        orientation="0,-1"
-       id="guide11233" />
+       id="guide11233"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="57.305786,57.12907"
        orientation="1,0"
-       id="guide11311" />
+       id="guide11311"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="34.418203,30.902719"
        orientation="1,0"
-       id="guide11351" />
+       id="guide11351"
+       inkscape:locked="false" />
   </sodipodi:namedview>
   <defs
      id="defs2" />
@@ -118,7 +137,7 @@
        x="7.1054274e-15"
        y="-29.048"
        ry="0"
-       inkscape:export-filename="/home/ytaborda/Projects/ytaborda17.github.io/img/ico.png"
+       inkscape:export-filename="ico.png"
        inkscape:export-xdpi="4.5155559"
        inkscape:export-ydpi="4.5155559" />
   </g>
@@ -127,7 +146,7 @@
      id="layer2"
      inkscape:label="Drawing">
     <path
-       style="fill:#fd257a;fill-opacity:1;stroke-width:1.09864"
+       style="fill:#8250df;fill-opacity:1;stroke-width:1.09864"
        d="M 10.043964,46.001278 -4.9999999e-7,1.6430664e-7 H 27.366318 L 31.357777,19.774929 48.629301,1.6430664e-7 H 135 L 127.99089,19.765805 107.93046,19.774005 88.460741,76.903999 H 64.704931 L 83.581351,19.802647 57.305781,19.774927 34.418202,46.00128 23.619977,76.903999 H -4.9999999e-7 Z"
        id="path854"
        sodipodi:nodetypes="cccccccccccccccc"
