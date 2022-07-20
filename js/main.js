@@ -12,27 +12,47 @@ function importFile(file) {
     document.getElementsByTagName('head').item(0).appendChild(script);
 }
 
+/**
+ * @param {string} paramName 
+ * @returns the value for the URL param requested
+ */
+ function findUrlParam(paramName) {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    return urlParams.get(paramName);
+}
+
+/**
+ * Allow visibility for an HTML collection
+ * @param {string} collectionName 
+ */
+function showCollection(collectionName) {
+    const collection = document.getElementsByClassName(collectionName);
+    for (const i in collection) {
+        if (Object.hasOwnProperty.call(collection, i)) {
+            const item = collection[i];
+            item.classList.toggle('invisible');
+            item.classList.toggle('noprint');
+        }
+    }
+}
+
 importFile('./js/cookieManager.js');
-
+const printButton = document.getElementById('print-button');
 
 
 //
-// Print button
+// Language switch
 //
-const pb = document.getElementById('print-button');
-
-if (navigator && navigator.userAgent && navigator.userAgent.indexOf('Firefox') > -1) {
-    pb.setAttribute('disabled', 'disabled');
-    pb.setAttribute('title', 'Use Google Chrome or Opera to print');
-    
-    /**
-     * There's a bug on firefox with display: grid and html5, I'm still debugging
-     * You can read about it here: https://tosbourn.com/firefox-printing-issue-for-grid-css/
-     * 
-     * Jul 7, 2022: I won't give any support to the 2% population using Firefox =P 
-     */
-} 
-
+const langLink = document.getElementsByClassName('lang');
+for (const i in langLink) {
+    if (Object.hasOwnProperty.call(langLink, i)) {
+        const actualLink = langLink[i];
+        actualLink.addEventListener('click', (event) => {
+            setCookie('lang', actualLink.getAttribute('data-lang').toLowerCase(), 30);
+        });
+    }
+}
 
 
 //
@@ -42,7 +62,7 @@ const themeSwitch = document.getElementById('theme-switch');
 
 themeSwitch.addEventListener('change', (event) => {
     document.body.classList.toggle('dark');
-    pb.classList.toggle('btn-dark');
+    printButton.classList.toggle('btn-dark');
   
     let theme = '';
   
@@ -53,16 +73,66 @@ themeSwitch.addEventListener('change', (event) => {
     setCookie('theme', theme, 30);
 });
 
+
+//
+// Show references and old data
+//
+['ref', 'old'].forEach(i => {
+    const param = findUrlParam(i);
+    if (param) {
+        showCollection(`${i}-data`);
+    }
+});
+
+
 window.onload = function() {
+    //
+    // Get theme
+    //
     const themeSelected = getCookie('theme');
 
     if (themeSelected && themeSelected === 'dark') {
         document.body.classList.add('dark');
-        pb.classList.add('btn-dark');
+        printButton.classList.add('btn-dark');
         themeSwitch.checked = true;
     } else {
         document.body.classList.remove('dark');
-        pb.classList.remove('btn-dark');
+        printButton.classList.remove('btn-dark');
         themeSwitch.checked = false;
     }
+
+    //
+    // Get language
+    //
+    const fileName = location.href.split("/").slice(-1)[0].split('.')[0];
+    
+    const langSelected = getCookie('lang');
+    if (langSelected && langSelected !== 'es' && fileName !== langSelected) {
+        location.href = `/${langSelected}.html`;
+    }
+
+    //
+    // Print button title
+    //
+    if (navigator && navigator.userAgent && navigator.userAgent.indexOf('Firefox') > -1) {    
+        let msg = 'Abrir con Opera o Google Chrome para imprimir';
+    
+        if (langSelected) {
+            switch (langSelected) {
+                case 'en':
+                    msg = 'Open with Google Chrome or Opera to print';
+                    break;
+                case 'fr':
+                    msg = 'Ouvrir avec Opera ou Google Chrome pour imprimer';
+                    break;
+            }
+        }
+        printButton.setAttribute('disabled', 'disabled');
+        printButton.setAttribute('title', msg);
+    
+        // There's a bug on firefox with display: grid and html5, I'm still debugging
+        // You can read about it here: https://tosbourn.com/firefox-printing-issue-for-grid-css/
+        // 
+        // Jul 7, 2022: I won't give any support to the 2% population using Firefox =P 
+    } 
 };
