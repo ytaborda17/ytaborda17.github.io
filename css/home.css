@@ -51,6 +51,8 @@ input:checked + .slider:before { -webkit-transform:translateX(16px); -ms-transfo
 .btn-dark:hover { color:#fff; background-color:#23272b; border-color:#1d2124 }
 .btn:not(:disabled):not(.disabled) { cursor:pointer }
 
+.p-t-5 { padding: 5px 0 }
+
 @media only screen {
     header { margin-top:30px }
 }

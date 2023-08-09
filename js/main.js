@@ -59,7 +59,6 @@ for (const i in langLink) {
 // Theme switch
 //
 const themeSwitch = document.getElementById('theme-switch');
-
 themeSwitch.addEventListener('change', (event) => {
     document.body.classList.toggle('dark');
     printButton.classList.toggle('btn-dark');
@@ -72,6 +71,26 @@ themeSwitch.addEventListener('change', (event) => {
   
     setCookie('theme', theme, 30);
 });
+
+//
+// References data switch
+//
+const refSwitch = document.getElementById('ref-switch');
+if (refSwitch) {
+    refSwitch.addEventListener('change', () => {
+        showCollection('ref-data');
+    });
+}
+
+//
+// Old data switch
+//
+const oldSwitch = document.getElementById('old-switch');
+if (oldSwitch) {
+    oldSwitch.addEventListener('change', () => {
+        showCollection('old-data');
+    });
+}
 
 
 //
